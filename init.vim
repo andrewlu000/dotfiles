@@ -5,7 +5,7 @@ call plug#begin()
     Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
 	Plug 'tpope/vim-fugitive'
-	Plug 'nvim-treesitter/nvim-treesitter'
+"	Plug 'nvim-treesitter/nvim-treesitter'
 	Plug 'davidhalter/jedi-vim'
 call plug#end()
 
