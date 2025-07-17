@@ -12,12 +12,12 @@ call plug#begin()
 	Plug 'img-paste-devs/img-paste.vim'
 
 "	LSP Abilities
-	Plug 'neovim/nvim-lspconfig'
-	Plug 'hrsh7th/cmp-nvim-lsp'
-	Plug 'hrsh7th/cmp-buffer'
-	Plug 'hrsh7th/cmp-path'
-	Plug 'hrsh7th/cmp-cmdline'
-	Plug 'hrsh7th/nvim-cmp'
+"	Plug 'neovim/nvim-lspconfig'
+"	Plug 'hrsh7th/cmp-nvim-lsp'
+"	Plug 'hrsh7th/cmp-buffer'
+"	Plug 'hrsh7th/cmp-path'
+"	Plug 'hrsh7th/cmp-cmdline'
+"	Plug 'hrsh7th/nvim-cmp'
 
 " 	Tree File Browser
 	Plug 'preservim/nerdtree'
