@@ -10,6 +10,14 @@ call plug#begin()
 "	Plug 'MeanderingProgrammer/render-markdown.nvim'
 	Plug 'vimwiki/vimwiki'
 	Plug 'img-paste-devs/img-paste.vim'
+
+"	LSP Abilities
+	Plug 'neovim/nvim-lspconfig'
+	Plug 'hrsh7th/cmp-nvim-lsp'
+	Plug 'hrsh7th/cmp-buffer'
+	Plug 'hrsh7th/cmp-path'
+	Plug 'hrsh7th/cmp-cmdline'
+	Plug 'hrsh7th/nvim-cmp'
 call plug#end()
 
 set number
