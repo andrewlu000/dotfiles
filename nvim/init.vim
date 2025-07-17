@@ -18,6 +18,9 @@ call plug#begin()
 	Plug 'hrsh7th/cmp-path'
 	Plug 'hrsh7th/cmp-cmdline'
 	Plug 'hrsh7th/nvim-cmp'
+
+" 	Tree File Browser
+	Plug 'preservim/nerdtree'
 call plug#end()
 
 set number
@@ -50,3 +53,6 @@ autocmd FileType markdown nmap <buffer><silent> <leader>p :call mdip#MarkdownCli
 nmap <leader>tt :tabnew<CR>
 nmap <leader>tm :tabnext<CR>
 nmap <leader>tn :tabprevious<CR>
+
+" NERDTree
+nnoremap <leader>nt :NERDTreeToggle<CR>
