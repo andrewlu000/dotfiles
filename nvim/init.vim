@@ -7,11 +7,12 @@ call plug#begin()
 	Plug 'tpope/vim-fugitive'
 "	Plug 'nvim-treesitter/nvim-treesitter'
 	Plug 'davidhalter/jedi-vim'
-	Plug 'MeanderingProgrammer/render-markdown.nvim'
+"	Plug 'MeanderingProgrammer/render-markdown.nvim'
 	Plug 'vimwiki/vimwiki'
 	Plug 'img-paste-devs/img-paste.vim'
 call plug#end()
 
+set number
 set background=dark
 set ts=4 
 set sw=4
