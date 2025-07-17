@@ -10,8 +10,3 @@ I like Unix. You like Unix. We all love dotfiles. Here ya go.
 - neofetch
 - tmux
 - zsh
-
-## Extras
-```bash
-ln -s ~/.config/.zshrc ~/.zshrc
-```
