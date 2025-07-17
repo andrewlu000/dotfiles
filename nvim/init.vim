@@ -56,3 +56,5 @@ nmap <leader>tn :tabprevious<CR>
 
 " NERDTree
 nnoremap <leader>nt :NERDTreeToggle<CR>
+
+let g:vimwiki_markdown_link_ext = 1
