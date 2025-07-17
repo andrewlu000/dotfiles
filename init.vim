@@ -7,14 +7,11 @@ call plug#begin()
 	Plug 'tpope/vim-fugitive'
 "	Plug 'nvim-treesitter/nvim-treesitter'
 	Plug 'davidhalter/jedi-vim'
+	Plug 'MeanderingProgrammer/render-markdown.nvim'
+	Plug 'vimwiki/vimwiki'
+	Plug 'img-paste-devs/img-paste.vim'
 call plug#end()
 
-" Important!!
-"if has('termguicolors')
-"  set termguicolors
-"endif
-
-" For dark version.
 set background=dark
 set ts=4 
 set sw=4
@@ -25,14 +22,22 @@ set sw=4
 " This configuration option should be placed before `colorscheme everforest`.
 " Available values: 'hard', 'medium'(default), 'soft'
 let g:everforest_background = 'soft'
-
-" For better performance
 let g:everforest_better_performance = 1
-
 colorscheme everforest
+
+let mapleader=","
 
 " Using Lua functions
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+autocmd FileType markdown nmap <buffer><silent> <leader>p :call mdip#MarkdownClipboardImage()<CR>
+" there are some defaults for image directory and image name, you can change them
+" let g:mdip_imgdir = 'img'
+" let g:mdip_imgname = 'image'
+
+nmap <leader>tt :tabnew<CR>
+nmap <leader>tm :tabnext<CR>
+nmap <leader>tn :tabprevious<CR>
