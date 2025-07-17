@@ -7,7 +7,6 @@
   "everforest": { "branch": "master", "commit": "f40c2e6c8784c99c57c79edc94cd180e76450222" },
   "fzf": { "branch": "master", "commit": "8ceda54c7d32833db084dc30ae95fdefe3aff716" },
   "fzf.vim": { "branch": "master", "commit": "3725f364ccd25b85a91970720ba9bc2931861910" },
-  "icon-picker.nvim": { "branch": "master", "commit": "3ee9a0ea9feeef08ae35e40c8be6a2fa2c20f2d3" },
   "img-paste.vim": { "branch": "master", "commit": "787be15ff52ea2db5ae7b813ab8808c8d4cf749e" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "nerdtree": { "branch": "master", "commit": "9b465acb2745beb988eff3c1e4aa75f349738230" },
