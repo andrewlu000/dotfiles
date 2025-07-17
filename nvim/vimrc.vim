@@ -5,9 +5,9 @@ call plug#begin()
     Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
 	Plug 'tpope/vim-fugitive'
-"	Plug 'nvim-treesitter/nvim-treesitter'
+	Plug 'nvim-treesitter/nvim-treesitter'
 	Plug 'davidhalter/jedi-vim'
-"	Plug 'MeanderingProgrammer/render-markdown.nvim'
+	Plug 'MeanderingProgrammer/render-markdown.nvim'
 	Plug 'vimwiki/vimwiki'
 	Plug 'img-paste-devs/img-paste.vim'
 
@@ -18,6 +18,9 @@ call plug#begin()
 	Plug 'hrsh7th/cmp-path'
 	Plug 'hrsh7th/cmp-cmdline'
 	Plug 'hrsh7th/nvim-cmp'
+
+" 	Emojis
+	Plug 'allaman/emoji.nvim'
 
 " 	Tree File Browser
 	Plug 'preservim/nerdtree'
@@ -47,8 +50,8 @@ nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
 autocmd FileType markdown nmap <buffer><silent> <leader>p :call mdip#MarkdownClipboardImage()<CR>
 " there are some defaults for image directory and image name, you can change them
-" let g:mdip_imgdir = 'img'
-" let g:mdip_imgname = 'image'
+let g:mdip_imgdir = 'img'
+let g:mdip_imgname = 'image'
 
 nmap <leader>tt :tabnew<CR>
 nmap <leader>tm :tabnext<CR>
