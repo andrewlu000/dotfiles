@@ -1,5 +1,4 @@
-#
-neofetch
+# neofetch
 
 alias v="nvim"
 alias m="ncmpcpp"
@@ -156,3 +155,7 @@ unset __mamba_setup
 # <<< mamba initialize <<<
 
 # eval $(thefuck --alias)
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+viu ~/.config/yay.jpg
