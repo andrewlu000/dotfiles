@@ -4,6 +4,8 @@
 require("config.lazy")
 -- require("telescope").load_extension("emoji")
 vim.cmd("colorscheme everforest")
+vim.cmd("autocmd BufWinLeave *.* mkview")
+vim.cmd("autocmd BufWinEnter *.* silent loadview")
 
 vim.keymap.set('n', '<Leader>tt', '<cmd>tabnew<cr>')
 vim.keymap.set('n', '<Leader>tm', '<cmd>tabnext<cr>')
