@@ -23,7 +23,7 @@ vim.opt.foldtext = 'v:lua.custom_fold_text()'
 function _G.custom_fold_text()
 	local line = vim.fn.getline(vim.v.foldstart)
     local line_count = vim.v.foldend - vim.v.foldstart + 1
-	local to_return = "" .. line .. "⚡ " .. line_count .. " lines"
+	local to_return = "" .. line .. "  " .. line_count .. " lines"
 --[[  replace the ^I tab stops in vim to just four spaces ]]
 	to_return = to_return:gsub(string.char(9), "    ")
 --[[	to_return = to_return:gsub("-", "*") ]]
