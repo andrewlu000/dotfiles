@@ -75,6 +75,7 @@ require("lazy").setup({
 	-- FZF
 	{ 'junegunn/fzf' },
 	{ 'junegunn/fzf.vim' },
+	{ 'jamessan/vim-gnupg' },
 	{
     "ziontee113/icon-picker.nvim",
 	enabled = false;
