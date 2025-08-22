@@ -61,7 +61,15 @@ require("lazy").setup({
 	{ 'vimwiki/vimwiki' },
 -- 	{ 'MeanderingProgrammer/render-markdown.nvim' },
 	{ 'tpope/vim-fugitive' },
-	-- { 'nvim-treesitter/nvim-treesitter' },
+	{ 'nvim-treesitter/nvim-treesitter', 
+		build = ':TSUpdate',
+		opts = {
+			highlight = {
+				enable = true,
+				additional_vim_regex_highlighting = true
+			}
+		}
+	},
 	{ 'img-paste-devs/img-paste.vim' },
 	-- LSP Abilities
 	-- { 'neovim/nvim-lspconfig' },
@@ -76,8 +84,7 @@ require("lazy").setup({
 	{ 'junegunn/fzf' },
 	{ 'junegunn/fzf.vim' },
 	{ 'jamessan/vim-gnupg' },
-	{
-    "ziontee113/icon-picker.nvim",
+	{ "ziontee113/icon-picker.nvim",
 	enabled = false;
     config = function()
         require("icon-picker").setup({ disable_legacy_commands = true })
@@ -88,11 +95,13 @@ require("lazy").setup({
         --vim.keymap.set("n", "<Leader><Leader>y", "<cmd>IconPickerYank<cr>", opts) --> Yank the selected icon into register
         --vim.keymap.set("i", "<C-i>", "<cmd>IconPickerInsert<cr>", opts)
     end
-}
+	},
+	{ 'inkarkat/vim-mark' },
+	{ 'inkarkat/vim-ingo-library' }
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "habermax" } },
+  install = { colorscheme = { "everforest" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
